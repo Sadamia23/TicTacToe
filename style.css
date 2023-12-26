@@ -1,0 +1,67 @@
+
+.cell{
+    box-shadow:  0 0 0 2px;
+    border: 2px solid;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 50px;
+}
+.cellContainer{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    width: 225px;
+    margin: auto;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Permanent Marker", cursive;
+}
+
+@media screen and (max-width:350px){
+    .cell{
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+    }
+    .cellContainer{
+        width: 150px;
+    }
+}
+
+@media screen and (max-width:200px) {
+    .cell{
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+        box-shadow:  0 0 0 1px;
+        border: 1px solid;
+    }
+    .cellContainer{
+        width: 90px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:100px) {
+    .cell{
+        width: 20px;
+        height: 20px;
+        font-size: 13px;
+    }
+    .cellContainer{
+        width: 60px;
+    }
+}
